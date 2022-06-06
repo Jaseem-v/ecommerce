@@ -143,7 +143,7 @@ const setBannerWidth = () => {
 // Image popup in mobile screen
 
 let product_img = document.querySelector("#myimage");
-if (mediaQuery.matches) {
+if (!mediaQuery.matches) {
 product_img.addEventListener("click", function () {
   $("#modal-container").removeAttr("class").addClass("active");
   $("body").addClass("modal-active");
