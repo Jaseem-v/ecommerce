@@ -165,7 +165,7 @@ $("body").on("click", "#myimage", function (sa) {
 
   console.log(product_img);
 
-  t.attr("src", product_img.getAttribute("src"));
+  t.attr("src", 'https://media.centrepointstores.com/i/centrepoint/17YM957-RMWHITE-17YM957-RM-SMSS2281121_01-2100.jpg?fmt=auto&h=750&w=750&qlt=default&sm=c');
 
   a.css({
     height: i,
