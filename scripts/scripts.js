@@ -140,8 +140,10 @@ const setBannerWidth = () => {
   }
 };
 
-let product_img = document.querySelector("#myimage");
+// Image popup in mobile screen
 
+let product_img = document.querySelector("#myimage");
+if (mediaQuery.matches) {
 product_img.addEventListener("click", function () {
   $("#modal-container").removeAttr("class").addClass("active");
   $("body").addClass("modal-active");
@@ -179,7 +181,7 @@ $("body").on("click", "#myimage", function (sa) {
 
   document.querySelector(".modal").scrollTo(300, 300);
 });
-
+}
 // Banner slide functions
 const autoSlider = () => {
   if (bannerSlideIndex === homeBannerLength - 1) {
